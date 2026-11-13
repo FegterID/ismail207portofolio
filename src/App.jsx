@@ -175,7 +175,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* VIDEO SHOWCASE SECTION */}
       <section className="video-section" id="videos">
 
         <div className="video-heading">
@@ -215,7 +214,7 @@ export default function App() {
 
 
 
-      <section className="contact section" id="contact"><div className="section-kicker">04 / CONTACT</div><div className="contact-inner"><div><p className="contact-overline">HAVE A PROJECT OR AN IDEA?</p><h2>Let's make<br/>something <span className="serif-accent">meaningful.</span></h2></div><div className="contact-right"><p>I'm always open to connecting with people who are curious about technology, cloud, and security.</p><a className="contact-email" href="mailto:2300018207@webmail.uad.ac.id">2300018207@webmail.uad.ac.id <Arrow/></a><span className="email-note">Replace this with your professional email address.</span><div className="social-links"><a href="https://github.com/FegterID?tab=overview&from=2026-10-01&to=2026-10-31" target="_blank" rel="noreferrer">GITHUB <Arrow/></a></div></div></div></section>
+      <section className="contact section" id="contact"><div className="section-kicker">05 / CONTACT</div><div className="contact-inner"><div><p className="contact-overline">HAVE A PROJECT OR AN IDEA?</p><h2>Let's make<br/>something <span className="serif-accent">meaningful.</span></h2></div><div className="contact-right"><p>I'm always open to connecting with people who are curious about technology, cloud, and security.</p><a className="contact-email" href="mailto:2300018207@webmail.uad.ac.id">2300018207@webmail.uad.ac.id <Arrow/></a><span className="email-note">Replace this with your professional email address.</span><div className="social-links"><a href="https://github.com/FegterID?tab=overview&from=2026-10-01&to=2026-10-31" target="_blank" rel="noreferrer">GITHUB <Arrow/></a></div></div></div></section>
     </main>
     <footer><a className="brand" href="#home"><span className="brand-mark">I.</span><span>ISMAIL<span className="brand-dot">_</span></span></a><span>DESIGNED & BUILT WITH CURIOSITY.</span><span>© {new Date().getFullYear()} ISMAIL</span></footer>
   </div>;
