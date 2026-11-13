@@ -34,28 +34,28 @@ export default function App() {
         <div className="hero-visual" aria-label="Abstract cloud security illustration">
           <div className="visual-grid"/><div className="orbit orbit-a"/><div className="orbit orbit-b"/>
           
-<div className="core-card">
-  <div className="core-top">
-    <span>SECURITY_STATUS</span>
-    <span className="live-dot">● LIVE</span>
-  </div>
+            <div className="core-card">
+              <div className="core-top">
+                <span>SECURITY_STATUS</span>
+                <span className="live-dot">● LIVE</span>
+              </div>
 
-  <div className="shield">
-    <img
-      src="/WhatsApp Image 2026-10-31 at 00.38.57.jpeg"
-      alt="Ismail Portrait"
-      className="profile-photo"
-    />
-  </div>
+              <div className="shield">
+                <img 
+                  src={`${import.meta.env.BASE_URL}WhatsApp Image 2026-10-31 at 00.38.57.jpeg`} 
+                  alt="Ismail Portrait"
+                  className="profile-photo"
+                />
+              </div>
 
-  <div className="core-bottom">
-    <span>PROTECT</span>
-    <span>·</span>
-    <span>DETECT</span>
-    <span>·</span>
-    <span>RESPOND</span>
-  </div>
-</div>
+              <div className="core-bottom">
+                <span>PROTECT</span>
+                <span>·</span>
+                <span>DETECT</span>
+                <span>·</span>
+                <span>RESPOND</span>
+              </div>
+            </div>
 
           <div className="float-chip chip-top"><span className="chip-icon">⌘</span><span><b>IAM</b><small>Identity & Access</small></span></div>
           <div className="float-chip chip-bottom"><span className="chip-icon">⌁</span><span><b>INFRASTRUCTURE</b><small>Cloud-first mindset</small></span></div>
@@ -77,6 +77,143 @@ export default function App() {
         <div className="project-grid">{projects.map(p => <article className="project-card" key={p.number}><div className="project-top"><span>{p.number} / {p.type}</span><span className="project-arrow"><Arrow/></span></div><div className="project-art"><div className="art-lines"/><div className="art-orb"/><span className="art-label">{p.number === '01' ? 'AWS // CLOUD' : p.number === '02' ? 'LINUX // HARDENING' : 'LOGS // MONITORING'}</span><span className="art-cross">＋</span></div><div className="project-info"><div className="project-status">{p.status}</div><h3>{p.title}</h3><p>{p.description}</p><div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div></div></article>)}</div>
         <p className="project-disclaimer">Note: These are portfolio project concepts and learning areas. Replace each description with verified project details, screenshots, and repository links as you complete the work.</p>
       </section>
+
+      
+      
+      <section className="cover-letter-section" id="cover-letter">
+        <div className="letter-container">
+
+          <div className="letter-header">
+            <h2>APPLICATION LETTER</h2>
+            <span className="letter-status">CAREER DOCUMENT</span>
+          </div>
+
+          <div className="letter-content">
+
+            <div className="letter-sender">
+              <h3>Ismail</h3>
+              <p>Yogyakarta, Indonesia</p>
+              <p>Email: 2300018207@webmail.uad.ac.id</p>
+              <p>Date: November 13, 2026</p>
+            </div>
+
+            <div className="letter-recipient">
+              <p><strong>To:</strong></p>
+              <p>Human Resources Manager</p>
+              <p>TechNova Digital Solutions</p>
+            </div>
+
+            <div className="letter-subject">
+              <strong>
+                Subject: Application for Junior Penetration Tester Position
+              </strong>
+            </div>
+
+            <div className="letter-body">
+              <p>Dear Human Resources Manager,</p>
+
+              <p>
+                I am writing to express my interest in applying for the
+                Junior Penetration Tester position at TechNova Digital
+                Solutions. I am an Informatics Engineering student with
+                a strong interest in cybersecurity, particularly
+                penetration testing and web application security.
+              </p>
+
+              <p>
+                During my internship this semester, I gained practical
+                experience in the penetration testing field. My
+                responsibilities included assisting with security
+                assessments, identifying potential vulnerabilities,
+                analyzing security issues, and understanding how to
+                evaluate the security of web applications. This
+                experience helped me improve my technical knowledge
+                and develop a better understanding of real-world
+                cybersecurity practices.
+              </p>
+
+              <p>
+                I also developed relevant technical skills, including
+                Linux system administration, computer networking,
+                TCP/IP, DNS, HTTP, and HTTPS. In addition, I have
+                studied web application security and the OWASP Top 10
+                to understand common security vulnerabilities and
+                their potential impacts.
+              </p>
+
+              <p>
+                One of my internship activities involved
+                <strong> conducting web application security assessments by identifying potential vulnerabilities, performing vulnerability analysis, testing common security issues based on the OWASP Top 10, and evaluating potential security risks. I also assisted in documenting security findings, analyzing their potential impact, and providing recommendations to improve application security. Through these activities, I gained practical experience in penetration testing methodologies, vulnerability assessment, and security reporting.</strong>.
+                Through this activity, I learned how to approach
+                security testing systematically, document findings,
+                and provide recommendations to improve application security.
+              </p>
+
+              <p>
+                I believe my academic background, internship experience,
+                technical knowledge, and willingness to learn make me
+                a suitable candidate for this position. I am confident
+                that joining TechNova Digital Solutions would allow me
+                to contribute to the team while continuing to develop
+                my cybersecurity skills.
+              </p>
+
+              <p>
+                Thank you for considering my application. I would
+                appreciate the opportunity to discuss my qualifications
+                further in an interview.
+              </p>
+
+              <div className="letter-signature">
+                <p>Sincerely,</p>
+                <h3>Ismail</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* VIDEO SHOWCASE SECTION */}
+      <section className="video-section" id="videos">
+
+        <div className="video-heading">
+          <span className="section-tag">// MEDIA & DOCUMENTATION</span>
+          <h2>VIDEO <span>SHOWCASE</span></h2>
+          <p>
+            Explore my cybersecurity journey, technical demonstrations,
+            and project documentation.
+          </p>
+        </div>
+
+        <div className="video-container">
+
+          <div className="video-card">
+            <div className="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/CVBp1W3CXlY"
+                title="Cybersecurity Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <div className="video-info">
+              <span>Presentation Video.</span>
+              <h3>My Cybersecurity Journey</h3>
+              <p>
+                A collection of my cybersecurity learning experiences,
+                practical demonstrations, and technical projects.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
 
       <section className="contact section" id="contact"><div className="section-kicker">04 / CONTACT</div><div className="contact-inner"><div><p className="contact-overline">HAVE A PROJECT OR AN IDEA?</p><h2>Let's make<br/>something <span className="serif-accent">meaningful.</span></h2></div><div className="contact-right"><p>I'm always open to connecting with people who are curious about technology, cloud, and security.</p><a className="contact-email" href="mailto:2300018207@webmail.uad.ac.id">2300018207@webmail.uad.ac.id <Arrow/></a><span className="email-note">Replace this with your professional email address.</span><div className="social-links"><a href="https://github.com/FegterID?tab=overview&from=2026-10-01&to=2026-10-31" target="_blank" rel="noreferrer">GITHUB <Arrow/></a></div></div></div></section>
     </main>
